@@ -45,18 +45,23 @@ sneaker-hood/
 git clone git@github.com:vinittippanawar/sneaker-hood.git
 cd sneaker-hood
 
+---------
+
 Install Python Dependencies
 bash
-
 python3 -m venv myenv
+
 source myenv/bin/activate
 
-Run the App Locally
+------
+#  Run the App Locally
 
 python app.py
+
 # or using Gunicorn
 gunicorn -b 0.0.0.0:5000 app:app --daemon
 
+-----
 
 Access the Site
 http://EC2-PUBLIC-IP:5000
