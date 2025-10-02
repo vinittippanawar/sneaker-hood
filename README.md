@@ -59,7 +59,7 @@ gunicorn -b 0.0.0.0:5000 app:app --daemon
 
 
 Access the Site
-http://<EC2-PUBLIC-IP>:5000
+http://EC2-PUBLIC-IP:5000
 
 -------
 
