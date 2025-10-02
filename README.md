@@ -1,26 +1,29 @@
-# Sneaker Hood
+# 👟 Sneaker Hood
 
-Sneaker Hood is a simple **Flask web application** showcasing popular sneaker brands like **Nike, Adidas, Puma, Vans, and New Balance**. Users can click **Shop Now** to directly message via WhatsApp.
+Sneaker Hood is a simple **Flask web application** showcasing popular sneaker brands. Users can click **Shop Now** to directly message via WhatsApp.
 
 ---
 
 ## 🚀 Features
-- Display sneaker brands with images
-- "Shop Now" button redirects to WhatsApp
-- Built with Python Flask and Gunicorn
-- Responsive layout with inline HTML & CSS
+
+- Display sneaker brands with images  
+- Shop Now button redirects to WhatsApp  
+- Built with Python Flask and Gunicorn  
+- Easy deployment on AWS EC2  
 
 ---
 
 ## 🛠 Tech Stack
-- **Backend:** Python Flask  
+
+- **Backend:** Python, Flask  
+- **Frontend:** Inline HTML & CSS (rendered by Flask)  
 - **Server:** Gunicorn  
-- **Frontend:** Inline HTML & CSS rendered by Flask  
-- **Other:** EC2 deployment, static images
+- **Deployment:** AWS EC2  
 
 ---
 
 ## 📂 Project Structure
+
 sneaker-hood/
 ├─ app.py # Main Flask application
 ├─ README.md # Project documentation
@@ -31,31 +34,35 @@ sneaker-hood/
 │ ├─ vans.jpeg
 │ └─ new_balance.jpeg
 
+yaml
+Copy code
+
+---
+
 ## ⚙️ Installation & Local Setup
 
-1. **Clone the Repository**
+### Clone the Repository
 ```bash
 git clone git@github.com:vinittippanawar/sneaker-hood.git
 cd sneaker-hood
-
 Install Python Dependencies
-
+bash
+Copy code
 python3 -m venv myenv
 source myenv/bin/activate
-
+pip install flask gunicorn
 Run the App Locally
-
+bash
+Copy code
 python app.py
 # or using Gunicorn
 gunicorn -b 0.0.0.0:5000 app:app --daemon
-
 Access the Site
-
+cpp
+Copy code
 http://<EC2-PUBLIC-IP>:5000
-
 📡 Deployment on AWS EC2
-
-Launch an EC2 Amazon Linux 2023 instance
+Launch an Amazon Linux 2023 EC2 instance
 
 Open port 5000 in Security Group
 
@@ -65,4 +72,5 @@ Copy project files to EC2
 
 Run with Gunicorn as shown above
 
-✍️ Author: Vinit T
+✍️ Author
+Vinit T
