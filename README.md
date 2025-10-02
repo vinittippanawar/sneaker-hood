@@ -24,6 +24,7 @@ Sneaker Hood is a simple **Flask web application** showcasing popular sneaker br
 
 ## 📂 Project Structure
 
+
 sneaker-hood/
 ├─ app.py # Main Flask application
 ├─ README.md # Project documentation
@@ -34,34 +35,37 @@ sneaker-hood/
 │ ├─ vans.jpeg
 │ └─ new_balance.jpeg
 
-yaml
-Copy code
 
 ---
 
 ## ⚙️ Installation & Local Setup
 
 ### Clone the Repository
-```bash
+
 git clone git@github.com:vinittippanawar/sneaker-hood.git
 cd sneaker-hood
+
 Install Python Dependencies
 bash
-Copy code
+
 python3 -m venv myenv
 source myenv/bin/activate
-pip install flask gunicorn
+
 Run the App Locally
-bash
-Copy code
+
 python app.py
 # or using Gunicorn
 gunicorn -b 0.0.0.0:5000 app:app --daemon
+
+
 Access the Site
-cpp
-Copy code
+
 http://<EC2-PUBLIC-IP>:5000
+
+-------
+
 📡 Deployment on AWS EC2
+
 Launch an Amazon Linux 2023 EC2 instance
 
 Open port 5000 in Security Group
@@ -71,6 +75,7 @@ Install Python & dependencies
 Copy project files to EC2
 
 Run with Gunicorn as shown above
+--------
 
 ✍️ Author
 Vinit T
