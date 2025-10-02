@@ -59,7 +59,6 @@ gunicorn -b 0.0.0.0:5000 app:app --daemon
 
 
 Access the Site
-
 http://<EC2-PUBLIC-IP>:5000
 
 -------
@@ -75,7 +74,8 @@ Install Python & dependencies
 Copy project files to EC2
 
 Run with Gunicorn as shown above
+
 --------
 
 ✍️ Author
-Vinit T
+Vinit Tippanawar
