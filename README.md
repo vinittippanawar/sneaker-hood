@@ -24,6 +24,7 @@ Sneaker Hood is a simple **Flask web application** showcasing popular sneaker br
 
 ## 📂 Project Structure
 
+---
 
 sneaker-hood/
 ├─ app.py # Main Flask application
